@@ -16,6 +16,7 @@ with HIDENAT the Tor users do not need only the server:port, but also a secret. 
 
 You are a system administrator of something, (let say, the service Bob on Holly server) and you don't want keep SSH exposed online. so if you perform an steganographic-authenticated connection to Bob, the destination port is Nat-ted to SSH.   
 
+
 ## Technology scenario and fictional characters
 
   * **Alice**: User performing connection, in posses of a secret
@@ -55,7 +56,13 @@ Alice too.
   * The ACK packet is sent by Alice or Mallory
   * Since the ACK packet, is possible for Bob understand if Alice (and which 'records' associated) or Mallory has established the connection, and perform DNAT to the appropriate port.
 
-
   * Eve has not the possibility to recognize if Alice is performing an authentication connection to Bob, or if Charlie or Mallory (both not authenticated) are connected to a different service.
   * If Mallory perform TCP hijacking of an established session (by Alice or Charlie, are indistiguishable), the attack is recognized by Bob (an alarm can be raised)
 
+## How technology works
+
+Look on the section [Tecnology](Technology.md)
+
+## Trivia fact
+
+I've already do the some thing 10 years ago. What's is changing now is not the logic behing. [historical trivia](HISTRIVIA.md)
